@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2? family = Montserrat: wght @ 100; 500; 800 & display = swap'); 
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1.5rem 0;
+    background-color: transparent;
+}
+
+.logo a {
+    color: #fff;
+    font-size:  30px;
+    font-weight: bold;
+}
+
+header ul li a.active {
+    color: goldenrod;
+}
+
+header ul li a {
+    color: #fff;
+    font-size: 14px;
+    font-size: bold;
+}
+
+@media (max-width: 700px) {
+    header {
+        display: none; 
+    }
+}
+p {
+    font-family: "Montserrat", sans-serif;
+}
+
+.main-section {
+    height: 100vh;
+    background-image: url("../img/pexels-josh-sorenson-1714208.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    padding: 10px;
+    line-height: 3.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 2%;
+}
+
+.main-section h2 {
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+.main-section h1 {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.main-section h1 span {
+    color: rgba(225, 172, 40, 0.85);
+}
+
+nav.social ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 15%;
+    margin: auto;
+    border-radius: 30%;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav.social ul li {
+    width: 30%;
+}
+
+nav.social ul li img {
+    max-width: 30%;
+}
+
+
+.about {
+    padding: 5rem;
+    display: flex;
+    width: 90%;
+}
+
+.container-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-about {
+    width: 65%;
+    padding-left: 1rem;
+}
+
+.img-about img {
+    max-width: 100%;
+}
+
+.about-info {
+    width: 60%;
+}
+
+.about-info p:first-child {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 14px;
+    color: goldenrod;
+}
+
+.about-info h2 {
+    font-size: 2.5rem;
+    padding: 5px;
+    margin: 1rem 0;
+    color: #fff;
+    background-color: goldenrod;
+    display: inline-block;
+}
+.about-info h4 {
+    color: black;
+    font-weight: bold;
+}
+
+.about-info__p {
+    color: #6a6a6a;
+    line-height: 1.5rem;
+    font-weight: lighter;
+    padding: 0.6em 0;
+}
+
+.about-buttons {
+    padding: 2rem 0;
+}
+
+.about-buttons a {
+    padding: 0.7rem 2rem;
+    border-radius: 20px;
+}
+
+.about-buttons a:nth-child(1) {
+    background-color: goldenrod;
+    color: #fff;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    border: 1px solid goldenrod;
+}
+
+.about-buttons a:nth-child(1):hover {
+    background-color: #fff;
+    color: goldenrod;
+}
+
+/* nth-child se usa para hacer cambios en un bloque o elemento sin ponerle clase */
+.about-buttons a:nth-child(2) {
+    border: 1px solid goldenrod;
+    color: goldenrod;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+/* hover es una clase que sirve para hacer un cambio o efecto cuando se pase el mouse */
+.about-buttons a:nth-child(2):hover {
+    color: #fff;
+    background-color: goldenrod;
+}
+
+@media (max-width: 700px) {
+    .container-about {
+        flex-direction: column;
+    }
+    .img-about {
+        width: 100%;
+    }
+    
+    .about-info {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .about {
+        padding: 1rem;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) { 
+    .about-buttons a{
+        padding: 0.7rem 1rem;
+    }
+}
+
+/* hacer un media para cada seccion */
+/* Services */

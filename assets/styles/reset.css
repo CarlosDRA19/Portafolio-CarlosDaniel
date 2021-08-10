@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2? family = Montserrat: wght @ 100; 500; 800 & display = swap'); 
+
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    text-decoration-color: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* HELPERS */
+
+.container {
+    width: 90%;
+    margin: auto;
+}
